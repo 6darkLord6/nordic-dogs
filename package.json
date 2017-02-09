@@ -1,0 +1,19 @@
+{
+  "name": "nordic-dogs",
+  "version": "1.0.0",
+  "description": "Pagina web de perros nordicos.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6darkLord6/nordic-dogs.git"
+  },
+  "author": "Oscar Piñeros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6darkLord6/nordic-dogs/issues"
+  },
+  "homepage": "https://github.com/6darkLord6/nordic-dogs#readme",
+  "dependencies":{
+    "maria":"" 
+  }
+}
