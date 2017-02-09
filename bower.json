@@ -1,0 +1,18 @@
+{
+  "name": "nordic-dogs",
+  "description": "Pagina web de perros nordicos.",
+  "main": "index.js",
+  "authors": [
+    "Oscar Piñeros"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/6darkLord6/nordic-dogs",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
