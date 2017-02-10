@@ -10,8 +10,9 @@
   <link href="css/index.css" rel="stylesheet">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/menu.js"></script>
 </head>
-<body>
+<body onload="cargarMenu();">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -26,25 +27,30 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre ellos <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Ellos <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Descripción</a></li>
               <li><a href="#">Características</a></li>
               <li><a href="#">Cuidados Básicos</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">FCI</li>
-              <li><a href="#">Clasificación de la FCI</a></li>
-              <li><a href="#">Sobre la FCI</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Razas <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Husky siberiano</a></li>
+            <ul id="ulRazas" class="dropdown-menu">
+              <li class="dropdown-header">FCI</li>
+              <li><a href="#">Clasificación de la FCI</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">En solitario</li>
             </ul>
           </li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Sobre la FCI</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria <span class="caret"></span></a>
+            <ul id="lstGaleria" class="dropdown-menu">
+              <li><a href="#">Imagenes</a></li>
+              <li><a href="#">Videos</a></li>
+            </ul>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -117,6 +123,14 @@
 
   </div><!-- /.container -->
 
+  <div class="info">
+    <h2>Un poco sobre ellos</h2>
+    <div class="content">
+      <p class="lead">Aunque hoy se han extendido por todo el mundo, los perros nórdicos tienen su origen en las regiones de clima más frío, en el norte del hemisferio norte, en diferentes continentes y países. Son los reyes del frío y la nieve, entre ellos, se encuentran los famosos perros de trineo y pastores de renos.</p>
+      <iframe id="ifmNordicos" width="560" height="315" src="https://www.youtube.com/embed/1oU7e_JdAOQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  
   <footer class="footer">
     <div class="container">
       <p class="text-muted">Place sticky footer content here.</p>

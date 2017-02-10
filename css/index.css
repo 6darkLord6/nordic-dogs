@@ -34,6 +34,10 @@ nav a{
   color: darkgray;
 }
 
+ul{
+  text-transform: capitalize;
+}
+
 /* CUSTOMIZE THE CAROUSEL */
 
 /* Carousel base class */
@@ -67,6 +71,27 @@ nav a{
 
 .text-muted{
   color: white;
+}
+
+/*info*/
+
+.info{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  text-align: justify;
+  background-color: rgb(144, 149, 155);
+}
+
+.info p{
+  width: 50%;
+  align-items: center;
+  margin: 10%;
+}
+
+#ifmNordicos{
+  width: 50%;
+  margin: 2%;
 }
 
 /* footer*/
