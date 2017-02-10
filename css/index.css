@@ -198,6 +198,15 @@ section{
   text-align: justify;
 }
 
+section img{
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
 /*info*/
 
 .info{
