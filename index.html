@@ -7,6 +7,7 @@
   <title>Perros Nordicos</title>
   <link href="airstream_regular_macroman/stylesheet.css" rel="stylesheet" type="text/css">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link href="css/index.css" rel="stylesheet">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -45,7 +46,7 @@
           </li>
           <li><a href="#">Sobre la FCI</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galeria <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-folder-o" aria-hidden="true"></i> Galeria <span class="caret"></span></a>
             <ul id="lstGaleria" class="dropdown-menu">
               <li><a href="#">Imagenes</a></li>
               <li><a href="#">Videos</a></li>
@@ -55,7 +56,7 @@
       </div><!--/.nav-collapse -->
     </div>
   </nav>
-  <header>
+  <header id="header">
     <!-- Carousel-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -143,8 +144,22 @@
   </div>
 
   <footer class="footer">
+    <div class="col-lg-12">
+      <div class="container  text-center">
+      <div class="downUp">
+        <a href="#header" class="fa fa-angle-double-up"> </a>
+      </div>
+      </div>
+    </div>
+
     <div class="container">
-      <p class="text-muted">Place sticky footer content here.</p>
+      <div class="redesS">
+        <a class="fa fa-twitter fa-2x" href="#"></a>
+        <a class="fa fa-facebook fa-2x" href="#"></a>
+        <a class="fa fa-instagram fa-2x" href="#"></a>
+      </div>
+      <hr>
+      <p class="text-muted">2017 © Nordic-Dogs - Bogotá - Colombia / Design by Ghost</p>
     </div>
   </footer><!--footer  -->
 </body>
