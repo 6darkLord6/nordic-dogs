@@ -1,0 +1,40 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.text-muted{
+  color: white;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: darkslategrey;
+}
