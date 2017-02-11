@@ -7,14 +7,15 @@
   <!-- InstanceBeginEditable name="doctitle" -->
   <title>Perros Nordicos</title>
   <!-- InstanceEndEditable -->
-  <link href="airstream_regular_macroman/stylesheet.css" rel="stylesheet" type="text/css">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="js/menu.js"></script>
   <!-- InstanceBeginEditable name="head" -->
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/index.js"></script>
   <!-- InstanceEndEditable -->
 </head>
 <body onload="cargarMenu();">
@@ -27,15 +28,15 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html#header">Perros Nordicos</a>
+        <a class="navbar-brand" href="#" onclick="redirigir('index.html#header')"><img id="imgLogo" src="img/topBar/logo.svg" alt=""> Perros Nordicos</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre Ellos <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="content/descripcion.html">Descripción</a></li>
-              <li><a href="#">Características</a></li>
+              <li><a href="#" onclick="redirigir('content/descripcion.html')">Descripción</a></li>
+              <li><a href="#" onclick="redirigir('content/caracteristicas.html')">Características</a></li>
               <li><a href="#">Cuidados Básicos</a></li>
             </ul>
           </li>
@@ -61,7 +62,7 @@
     </div>
   </nav>
 
-    <!-- InstanceBeginEditable name="content" -->
+  <!-- InstanceBeginEditable name="content" -->
 
   <header id="header">
     <!-- Carousel-->
@@ -74,32 +75,32 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="img/slider1.jpg" alt="First slide">
+          <img class="first-slide" src="img/index/slider1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Encuentra todo sobre nosotros</h1>
+              <p>Aprende todo sobre perros nórdicos, encuentra el que te gusta, descarga información y multimedia de ellos. Para más información suscríbete a nuestra sección de miembros.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Inscríbete</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="img/chiens-traineau3-min.jpg" alt="Second slide">
+          <img class="second-slide" src="img/index/slider2.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>Encuéntralos según sus aptitudes.</h1>
+              <p>Descubre y aprende sobre sus características, trato y compañía.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Clasificación</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="img/87582372.jpg" alt="Third slide">
+          <img class="third-slide" src="img/index/slider3.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1>Míranos en nuestra sección multimedia</h1>
+              <p>Encuentra toda la información en multimedia de tus razas nórdicas favoritas en un solo lugar.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Buscar en Galería.</a></p>
             </div>
           </div>
         </div>
@@ -150,7 +151,9 @@
 
   <aside>
     <div class="container">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab velit fugiat harum perspiciatis maxime, blanditiis similique iure minus, laboriosam, nostrum numquam ullam praesentium ut obcaecati sit quidem vitae reiciendis quo!</p>
+      <h2>Conócenos</h2>
+      <ul id="hexGrid"></ul>
+      <br><br>
     </div><!-- container -->
   </aside><!-- aside -->
   <!-- InstanceEndEditable -->
@@ -158,9 +161,9 @@
   <footer class="footer">
     <div class="col-lg-12">
       <div class="container  text-center">
-      <div class="downUp">
-        <a href="#header" class="fa fa-angle-double-up"> </a>
-      </div>
+        <div class="downUp">
+          <a href="#header" class="fa fa-angle-double-up"> </a>
+        </div>
       </div>
     </div>
 
@@ -174,5 +177,8 @@
       <p class="text-muted">2017 © Nordic-Dogs - Bogotá - Colombia / Design by Ghost</p>
     </div>
   </footer><!--footer  -->
+  <script>
+  createHexRazas();
+  </script>
 </body>
 <!-- InstanceEnd --></html>

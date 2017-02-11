@@ -1,0 +1,234 @@
+/* FONT-FACE*/
+@font-face {
+	font-family: 'ralewaybold';
+	src: url("#{resource['fonts/Raleway/Raleway-Bold-webfont.eot']}");
+	src: url("#{resource['fonts/Raleway/Raleway-Bold-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Bold-webfont.woff2']}") format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Bold-webfont.woff']}") format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Bold-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Bold-webfont.svg']}#ralewaybold")
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaysemibold';
+	src: url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.eot']}");
+	src: url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.woff']}")
+	format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-SemiBold-webfont.svg']}#ralewaysemibold")
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaylight';
+	src: url("#{resource['fonts/Raleway/Raleway-Light-webfont.eot']}");
+	src: url("#{resource['fonts/Raleway/Raleway-Light-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Light-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Light-webfont.woff']}") format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Light-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Light-webfont.svg']}#ralewaylight")
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaymedium';
+	src: url("#{resource['fonts/Raleway/Raleway-Medium-webfont.eot']}");
+	src: url("#{resource['fonts/Raleway/Raleway-Medium-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.woff']}") format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.svg']}#ralewaymedium")
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+	src: url("#{resource['fonts/Raleway/Raleway-Medium-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.woff']}") format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Medium-webfont.svg']}#ralewaymedium")
+	format('svg');
+}
+
+@font-face {
+	font-family: 'ralewayregular';
+	src: url("#{resource['fonts/Raleway/Raleway-Regular-webfont.eot']}");
+	src: url("#{resource['fonts/Raleway/Raleway-Regular-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.woff']}")
+	format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.svg']}#ralewayregular")
+	format('svg');
+	font-weight: normal;
+	font-style: normal;
+	src: url("#{resource['fonts/Raleway/Raleway-Regular-webfont.eot']}#iefix")
+	format('embedded-opentype'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.woff2']}")
+	format('woff2'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.woff']}")
+	format('woff'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.ttf']}")
+	format('truetype'),
+	url("#{resource['fonts/Raleway/Raleway-Regular-webfont.svg']}#ralewayregular")
+	format('svg');
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+body {
+	/*Tamanio del menu*/
+	padding-top: 50px;
+}
+
+h1{
+	font-family: "ralewaybold";
+}
+
+h2{
+	font-family: "ralewaysemibold";
+	text-align: center;
+	color: rgb(10, 56, 97);
+}
+
+p{
+	font-family: "ralewayregular";
+}
+
+ul{
+	text-transform: capitalize;
+}
+
+a{
+	font-family: "ralewaymedium";
+}
+
+/* Nav */
+nav{
+	background-color: rgb(83, 127, 166) !important;
+	border: 0px !important;
+}
+
+nav a{
+	color: white !important;
+}
+
+.navbar-brand{
+  display: flex;
+  flex-direction: row;
+}
+
+#imgLogo{
+  width: 20px;
+  border-radius: 20px;
+}
+
+.dropdown-menu{
+	background-color: rgb(83, 127, 166) !important;
+}
+
+.dropdown-menu a:hover{
+	background-color: black !important;
+}
+
+.dropdown-header{
+	color: darkgray;
+}
+
+/* footer*/
+
+.downUp{
+	display: block;
+	background-color: rgb(45, 88, 115);
+	width: 45px;
+	height: 40px;
+	font-size: 28px;
+	line-height: 38px;
+	position: absolute;
+	top: -40px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	-webkit-transform: translateZ(0);
+	-webkit-transition: 0.2s all linear;
+	-moz-transition: 0.2s all linear;
+	transition: 0.2s all linear;
+	cursor: pointer;
+}
+
+.downUp a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer {
+	/* Establecer la altura fija del pie de página */
+	height: 200px;
+	background-color: rgb(45, 88, 115);
+}
+
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	padding: 60px 15px 0;
+}
+.container .text-muted {
+	margin: 20px 0;
+}
+
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.redesS{
+	text-align: center;
+	margin: 20px;
+}
+
+.redesS a{
+	color: black;
+	padding: 25px;
+	box-sizing: border-box;
+}
+
+.redesS a:hover{
+	color: white;
+	text-decoration: none;
+}

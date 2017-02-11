@@ -24,3 +24,8 @@ function cargarMenu(){
     $('#ulRazas').append('<li><a href="#">'+entry+"</a></li>");
   });
 }
+
+function redirigir(dir){
+  var path = window.location.href.split("nordic-dogs")[0]+"nordic-dogs/"+dir;
+  $(location).attr('href', path);
+}
