@@ -16,6 +16,7 @@
   <!-- InstanceBeginEditable name="head" -->
   <link href="css/index.css" rel="stylesheet">
   <script src="js/index.js"></script>
+  <script src="data/dog-index.txt"></script>
   <!-- InstanceEndEditable -->
 </head>
 <body onload="cargarMenu();">
@@ -150,8 +151,12 @@
   </div>
 
   <aside>
+    <script>
+      inicializar();
+    </script>
     <div class="container">
       <h2>Conócenos</h2>
+      <br>
       <ul id="hexGrid"></ul>
       <br><br>
     </div><!-- container -->
@@ -177,8 +182,5 @@
       <p class="text-muted">2017 © Nordic-Dogs - Bogotá - Colombia / Design by Ghost</p>
     </div>
   </footer><!--footer  -->
-  <script>
-  createHexRazas();
-  </script>
 </body>
 <!-- InstanceEnd --></html>

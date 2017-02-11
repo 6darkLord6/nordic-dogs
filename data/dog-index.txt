@@ -1,0 +1,10 @@
+titleDog1="Husky siberiano";
+infoDog1=" Raza de perro de trabajo originaria del noreste de Siberia (Chukotka, Rusia)";
+titleDog2="Samoyedo";
+infoDog2="La raza canina Samoyedo ha tomado su nombre de los pueblos samoyedos del norte de Rusia.";
+titleDog3="Alaskan malamute";
+infoDog3="Se caracteriza por presentar una abundante y espesa capa de pelo que cubre un cuerpo fuerte y musculoso.";
+titleDog4="Perro de Groenlandia";
+infoDog4="Es una de las razas más antiguas del mundo, utilizada durante siglos por los esquimales para la caza y el transporte.";
+titleDog5="Elkhound noruego";
+infoDog5="Es una de las antiguas razas caninas de tipo Spitz y es el perro nacional de Noruega.";

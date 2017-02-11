@@ -1,12 +1,14 @@
-var $dogs = new Array();
-
 function inicializar(){
-  for (var i = 0; i < $dogs.length; i++) {
-    $dogs[i]=new Array(3);
-  }
-}
-
-function createHexRazas(){
-  var li = '<li class="hex"> <div class="hexIn"> <a class="hexLink" href="#"> <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt="" /> <h1>This is a title</h1> <p>Some sample text about the article this hexagon leads to</p></a> </div> </li>';
-  $('#hexGrid').append(li);
+  $(document).ready(function(){
+    var $path = "'content/razas/dog.html?id=";
+    var $close = "')";
+    for (var i = 0; i < 5; i++) {
+    var $title = eval('titleDog'+(i+parseInt(1)));
+      var $info = eval('infoDog'+(i+parseInt(1)));
+      var $img = "img/index/dog"+(i+parseInt(1))+".png" ;
+      var li = '<li class="hex"> <div class="hexIn"> <a class="hexLink" href="#" onclick="redirigir('+$path+(i+parseInt(1))+$close+'"> <img src='+$img+' alt="" /> <h1>'+$title+'</h1> <p>'+$info+'</p></a> </div> </li>';
+      $('#hexGrid').append(li);
+    }
+    }
+  );
 }
