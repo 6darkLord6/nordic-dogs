@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.content{
+  height: 100%;
+  border: 1px solid black !important;
+}
+
+.content a{
+  font-size: 18px !important;
+}
+
+.menu{
+  height: 100%;
+}
